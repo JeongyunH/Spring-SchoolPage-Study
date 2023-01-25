@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  *
  */
-@DisplayName("학습자가 시험지를 푸는 것에 대해서 테스트 한다. ")
+@DisplayName("학생이 시험지를 푸는 것에 대해서 테스트 한다. ")
 @DataJpaTest
 public class PaperSolveTest extends WithPaperTemplateTest {
 
