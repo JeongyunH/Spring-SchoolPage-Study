@@ -7,11 +7,17 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
         </processorPath>
-        <module name="Spring_School_Test.server-authority-acl.test" />
-        <module name="Spring_School_Test.comp-user-admin.main" />
+        <module name="Spring_School_Test.web-site-teacher.main" />
         <module name="Spring_School_Test.comp-user-admin.test" />
+        <module name="Spring_School_Test.comp-user-admin.main" />
         <module name="Spring_School_Test.comp-paper-user.test" />
-        <module name="Spring_School_Test.server-authority-acl.main" />
+        <module name="Spring_School_Test.server-paper-app.main" />
+        <module name="Spring_School_Test.web-site-manager.test" />
+        <module name="Spring_School_Test.web-site-student.test" />
+        <module name="Spring_School_Test.server-paper-app.test" />
+        <module name="Spring_School_Test.web-site-manager.main" />
+        <module name="Spring_School_Test.web-site-student.main" />
+        <module name="Spring_School_Test.web-site-teacher.test" />
         <module name="Spring_School_Test.comp-paper.main" />
         <module name="Spring_School_Test.comp-paper-user.main" />
         <module name="Spring_School_Test.comp-paper.test" />
