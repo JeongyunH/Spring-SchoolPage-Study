@@ -13,8 +13,8 @@
 
             <div class="collapse navbar-collapse" id="navbarsExample03">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item" th:classappend="${menu=='study' ? 'active' : ''}">
-                        <a class="nav-link" href="/teacher/study/list"> 학생 <span class="sr-only">(current)</span></a>
+                    <li class="nav-item" th:classappend="${menu=='student' ? 'active' : ''}">
+                        <a class="nav-link" href="/teacher/student/list"> 학생 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item" th:classappend="${menu=='paper' ? 'active' : ''}">
                         <a class="nav-link" href="/teacher/paperTemplate/list"> 시험지 <span class="sr-only">(current)</span></a>
