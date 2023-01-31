@@ -60,7 +60,8 @@ public class SchoolMngController {
     @PostMapping(value = "/save", consumes = {"application/x-www-form-urlencoded;charset=UTF-8", MediaType.APPLICATION_FORM_URLENCODED_VALUE})
     public String save(School school){
         schoolService.save(school);
-        return "redirect:/manager/school/list.html";
+//        return "redirect:/manager/school/list.html";
+        return "/manager/school/list.html";
     }
 
 }

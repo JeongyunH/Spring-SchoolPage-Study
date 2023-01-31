@@ -45,7 +45,7 @@
     <input type="hidden" name="site" th:value="${site}" />
     <input type="hidden" name="redirectUrl" th:value="${'/'+site}" />
     <button class="btn btn-lg btn-primary btn-block" th:classappend="${site}" type="submit"> 로그인 </button>
-    <a th:if="${!site.equals('manager')} " class="btn btn-lg btn-secondary btn-block" th:href="@{/signup(site=${site})}"> 회원 가입 </a>
+    <a th:if="${!site.equals('manager')} " class="btn btn-lg btn-secondary btn-block" th:href="@{'/signup/'+${site}}"> 회원 가입 </a>
 
     <div class="link-site">
       <ul>

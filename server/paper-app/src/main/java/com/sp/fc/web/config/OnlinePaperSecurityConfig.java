@@ -69,8 +69,8 @@ public class OnlinePaperSecurityConfig extends WebSecurityConfigurerAdapter {
                             .antMatchers("/login").permitAll()
                             .antMatchers("/error").permitAll()
                             .antMatchers("/signup/*").permitAll()
-                            .antMatchers("/student/**").hasAuthority("ROLE_STUDENT")
-                            .antMatchers("/teacher/**").hasAuthority("ROLE_TEACHER")
+                            .antMatchers("/student/**").hasAnyAuthority("ROLE_ADMIN", "ROLE_STUDENT")
+                            .antMatchers("/teacher/**").hasAnyAuthority("ROLE_ADMIN", "ROLE_TEACHER")
                             .antMatchers("/manager/**").hasAuthority("ROLE_ADMIN");
                 })
         ;

@@ -1,5 +1,6 @@
 package com.sp.fc.web.controller;
 
+import com.sp.fc.user.domain.Authority;
 import com.sp.fc.user.domain.School;
 import com.sp.fc.user.domain.User;
 import com.sp.fc.user.service.SchoolService;
@@ -56,6 +57,15 @@ public class HomeController {
             @RequestParam(value="error", defaultValue = "false") Boolean error,
             HttpServletRequest request,
             Model model){
+        if(user != null && user.isEnabled()){
+            if(user.getAuthorities().contains(Authority.ADMIN_AUTHORITY)){
+                return "redirect:/manager";
+            }else if(user.getAuthorities().contains(Authority.TEACHER_AUTHORITY)){
+                return "redirect:/teacher";
+            }else if(user.getAuthorities().contains(Authority.STUDENT_AUTHORITY)){
+                return "redirect:/student";
+            }
+        }
         if(site == null){
             SavedRequest savedRequest = requestCache.getRequest(request, null);
             if(savedRequest != null){

@@ -6,8 +6,8 @@ dependencies {
 
     implementation("$boot:spring-boot-starter-data-jpa")
 
-    runtime("com.h2database:h2")
-//    runtime("mysql:mysql-connector-java")
+//    runtime("com.h2database:h2")
+    runtime("mysql:mysql-connector-java")
 
     compile project(":comp-paper")
     compile project(":comp-paper-user")

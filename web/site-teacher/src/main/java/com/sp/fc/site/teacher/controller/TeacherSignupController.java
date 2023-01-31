@@ -28,7 +28,7 @@ public class TeacherSignupController {
         return "/teacher/signup";
     }
 
-    @PostMapping(value = "/signup/teacher", consumes = {"application/x-www-form-urlencoded;charset=UTF-8", MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    @PostMapping(value = "/signUp/teacher", consumes = {"application/x-www-form-urlencoded;charset=UTF-8", MediaType.APPLICATION_FORM_URLENCODED_VALUE})
     public String signUp(TeacherSignUpForm form, Model model){
 /*        final User teacher = User.builder()
                 .name(form.getName())
